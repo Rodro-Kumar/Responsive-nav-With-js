@@ -1,0 +1,201 @@
+@import url(/common.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+body {
+  background: #0a157a;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav {
+  background: #fff;
+  padding: 16px 0;
+}
+
+.nav-part {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo span {
+  align-items: center;
+  padding-left: 7px;
+  font-weight: 500;
+  color: #252630;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+}
+
+.list a {
+  color: var(--neutral-main-600, #74768f);
+  font-size: 16px;
+  font-weight: 500;
+  transition: all linear 0.1s;
+  -webkit-transition: all linear 0.1s;
+  -moz-transition: all linear 0.1s;
+  -ms-transition: all linear 0.1s;
+  -o-transition: all linear 0.1s;
+}
+
+.list a:hover {
+  color: #0a157a;
+}
+
+.list ul {
+  column-gap: 45px;
+}
+
+.SignBtn {
+  color: var(--neutral-main-50, #fbfbfb);
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #252630;
+  border: 0;
+  padding: 16px 24px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  cursor: pointer;
+  transition: all linear 0.1s;
+  -webkit-transition: all linear 0.1s;
+  -moz-transition: all linear 0.1s;
+  -ms-transition: all linear 0.1s;
+  -o-transition: all linear 0.1s;
+}
+
+.SignBtn:hover {
+  background-color: #0a157a;
+  color: #fbfbfb;
+}
+
+.SignUpBtn {
+  margin-left: 16px;
+  color: #0a157a;
+  font-size: 16px;
+  font-weight: 400;
+  background: transparent;
+  border: 1px solid #252630;
+  padding: 16px 24px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  cursor: pointer;
+  transition: all linear 0.1s;
+  -webkit-transition: all linear 0.1s;
+  -moz-transition: all linear 0.1s;
+  -ms-transition: all linear 0.1s;
+  -o-transition: all linear 0.1s;
+}
+
+.SignUpBtn:hover {
+  background-color: #252630;
+  color: #fbfbfb;
+}
+
+.bar {
+  cursor: pointer;
+  display: none;
+  font-size: 25px;
+}
+
+.ul {
+  display: flex;
+}
+
+.sidebar .list {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar .list ul {
+  display: block;
+  row-gap: 20px;
+}
+
+.sidebar .list li a {
+  padding: 10px 30px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.sidebar .list li a:hover {
+  background-color: #3440ada6;
+  color: #fff;
+}
+
+.sidebar {
+  width: 100%;
+  position: absolute;
+  display: none;
+  padding: 20px 0;
+  z-index: -1;
+  background-color: #313a8f;
+}
+
+.sidebar-active {
+  -webkit-animation: slide-in-top 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-top 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  display: block;
+}
+
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.sidebar .btn {
+  padding-top: 25px;
+
+  display: flex;
+  justify-content: center;
+
+  border: 0;
+}
+
+.sidebar .btn .SignBtn {
+  padding: 15px 20px;
+}
+
+.sidebar .btn .SignUpBtn {
+  color: #fff;
+  padding: 15px 20px;
+}
+
+.side-item {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
